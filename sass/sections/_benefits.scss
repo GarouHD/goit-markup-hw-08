@@ -1,0 +1,92 @@
+@import "../utils/vars";
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    color: $text-light-grey;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 9.5px;
+    text-align: center;
+  }
+
+  &__icon {
+    background-color: $our-team-background;
+    border-radius: 4px;
+    padding: 25px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+
+    &__item {
+      flex-basis: calc(100%/2 - 15px);
+  
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .benefits {
+    flex-direction: row;
+
+    &__item {
+      flex-basis: 270px;
+  
+      &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__item {
+      flex-basis: 270px;
+  
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &__icon {
+      padding: 25px 102px;
+    }
+  }
+}

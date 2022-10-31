@@ -1,0 +1,67 @@
+@import "../utils/vars";
+
+.customer {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    border: 1px solid $social-icon-fill;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $text-color-accent;
+      outline: none;
+    }
+
+    &:hover .customer__icon,
+    &:focus .customer__icon {
+      fill: $text-color-accent;
+    }
+  }
+
+  &__item {
+    flex-basis: calc(100%/2 - 30px);
+  }
+
+  &__icon {
+    fill: $social-icon-fill;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .customer {
+
+    &__item {
+      flex-basis: calc(100%/3 - 30px);
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .customer {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0px;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__link {
+      padding: 16px 32px;
+      display: block;
+    }
+  
+  }
+}

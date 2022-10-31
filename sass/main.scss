@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+@import './sections/benefits';
+@import './base/container';
+@import './sections/header-contacts';
+@import './components/header';
+@import './components/logo';
+@import './components/nav-bar';
+@import './components/nav';
+@import './sections/our-team';
+@import './base/section';
+@import './sections/wwd';
+@import './components/our-team-socials.scss';
+@import './sections/efs';
+@import './components/footer';
+@import './components/sub';
+@import './sections/customer';
+@import './components/backdrop';
+@import './components/is-hidden';
+@import './components/modal';
+@import './components/service-form';
+@import './components/checkbox.scss';
+@import './components/filter';
+@import './components/current-button';
+@import './components/current-page';
+@import './components/grid';
+@import './sections/product-card';
+@import './sections/burger';
+@import './sections/mobile-menu';
+@import './components/mobile-nav';
+@import './components/mobile-contacts';
+@import './components/mobile-socials';
+
+/* default styles for css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+body a,
+link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body ul,
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* end of default styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+}
