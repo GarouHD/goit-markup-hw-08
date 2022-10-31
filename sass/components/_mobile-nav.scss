@@ -21,3 +21,16 @@
     }
     }
 }
+
+@media screen and (max-height: 450px) {
+    .mobile-nav {
+
+        &__item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            font-size: 30px;
+        }
+    }
+}

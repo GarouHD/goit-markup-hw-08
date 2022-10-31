@@ -2,7 +2,7 @@
 
 .filter {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   row-gap: 15px;
 
@@ -47,6 +47,7 @@
   .filter {
     justify-content: center;
     flex-wrap: nowrap;
+    margin-bottom: 50px;
 
     &__buttons {
       &--middle {

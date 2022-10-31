@@ -163,12 +163,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__div {
-    padding: 0px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__div {
-    padding: 0px;
+    padding: 0 15px;
   }
 }
 .logo {
@@ -305,7 +305,7 @@
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .section--our-team {
   background-color: #f5f4fa;
@@ -321,6 +321,7 @@
   }
   .section__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .wwd {
@@ -616,6 +617,12 @@
   background-color: white;
 }
 
+@media screen and (max-height: 450px) {
+  .backdrop {
+    align-items: flex-start;
+    overflow: scroll;
+  }
+}
 .is-hidden {
   pointer-events: none;
   opacity: 0%;
@@ -759,7 +766,7 @@
 
 .filter {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   row-gap: 15px;
 }
@@ -794,6 +801,7 @@
   .filter {
     justify-content: center;
     flex-wrap: nowrap;
+    margin-bottom: 50px;
   }
   .filter__buttons--middle {
     padding: 6px 53px;
@@ -809,17 +817,37 @@
 .current-page {
   color: #2196f3;
 }
-.current-page::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  position: absolute;
-  bottom: -1px;
-}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .current-page {
+    color: #2196f3;
+  }
+  .current-page::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .current-page {
+    color: #2196f3;
+  }
+  .current-page::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+  }
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -955,6 +983,17 @@
   outline: none;
 }
 
+@media screen and (max-height: 450px) {
+  .mobile-nav__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .mobile-nav__link {
+    font-size: 30px;
+  }
+}
+.mobile-contacts {
+  margin-bottom: 60px;
+}
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -975,6 +1014,14 @@
   color: #757575;
 }
 
+@media screen and (max-height: 450px) {
+  .mobile-contacts__number {
+    font-size: 26px;
+  }
+  .mobile-contacts__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .mobile-socials {
   display: flex;
 }

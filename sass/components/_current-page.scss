@@ -2,15 +2,38 @@
 
 .current-page {
   color: $text-color-accent;
+}
 
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $text-color-accent;
-    border-radius: 2px;
-    position: absolute;
-    bottom: -1px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .current-page {
+    color: $text-color-accent;
+  
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $text-color-accent;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -1px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .current-page {
+    color: $text-color-accent;
+  
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $text-color-accent;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -1px;
+    }
   }
 }

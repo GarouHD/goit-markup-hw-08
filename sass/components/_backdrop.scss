@@ -16,4 +16,12 @@
 
 }
 
+@media screen and (max-height: 450px) {
+
+  .backdrop {
+    align-items: flex-start;
+    overflow: scroll;
+  }
+}
+
 
